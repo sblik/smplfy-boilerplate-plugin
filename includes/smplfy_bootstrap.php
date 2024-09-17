@@ -2,10 +2,13 @@
 /**
  *  Loads specified files and all files in specified directories initialises dependencies
  */
+
+namespace SMPLFY\boilerplate;
+
 function bootstrap_boilerplate_plugin() {
 	require_boilerplate_dependencies();
 
-	SMPLFY_DependencyFactory::create_plugin_dependencies();
+	DependencyFactory::create_plugin_dependencies();
 }
 
 /**
@@ -16,7 +19,7 @@ function bootstrap_boilerplate_plugin() {
 function require_boilerplate_dependencies() {
 
 	require_file( 'includes/enqueue_scripts.php' );
-	require_file( 'includes/admin/SMPLFY_DependencyFactory.php' );
+	require_file( 'includes/admin/DependencyFactory.php' );
 
 	require_directory( 'includes/public/php/types' );
 	require_directory( 'includes/public/php/entities' );

@@ -4,6 +4,8 @@
  * * Enqueue scripts on Website
  *
  *  */
+
+namespace SMPLFY\boilerplate;
 function bs_enqueue_boilerplate_frontend_scripts() {
 	global $current_user;
 	global $post;

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * recursively require all php files in a directory
  *
@@ -7,6 +6,8 @@
  *
  * @return void
  */
+
+namespace SMPLFY\boilerplate;
 function require_directory( $dir ) {
 	if ( ! realpath( $dir ) ) {
 		$dir = SMPLFY_NAME_PLUGIN_DIR . $dir; // Append plugin dir if it is a relative path

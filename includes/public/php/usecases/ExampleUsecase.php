@@ -6,6 +6,9 @@
  *  One or more of the functions are usually tied to a hook e.g. a Gravity Forms "after_submission" hook. See the Gravity Forms Adapter for how they are linked.
  */
 
+namespace SMPLFY\boilerplate;
+
+use SmplfyCore\SMPLFY_Log;
 
 class ExampleUsecase {
 	private ExampleRepository $exampleRepository;

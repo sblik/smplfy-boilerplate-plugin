@@ -6,6 +6,11 @@
  *  from this custom plugin.
  */
 
+namespace SMPLFY\boilerplate;
+
+use SmplfyCore\SMPLFY_BaseRepository;
+use SmplfyCore\SMPLFY_GravityFormsApiWrapper;
+
 /**
  *
  * @method static ExampleEntity|null get_one( $fieldId, $value )

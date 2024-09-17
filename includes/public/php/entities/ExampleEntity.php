@@ -1,5 +1,4 @@
 <?php
-
 /**
  * An entity represents a Gravity Form and combined with a corresponding Repository can allow for form entry manipulation to be simple and easy to
  * understand when looking at the code
@@ -8,6 +7,11 @@
  * @property $nameLast
  * @property $email
  */
+
+namespace SMPLFY\boilerplate;
+
+use SmplfyCore\SMPLFY_BaseEntity;
+
 class ExampleEntity extends SMPLFY_BaseEntity {
 	public function __construct( $formEntry = array() ) {
 		parent::__construct( $formEntry );
