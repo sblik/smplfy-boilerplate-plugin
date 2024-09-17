@@ -4,7 +4,7 @@ namespace SMPLFY\boilerplate;
 use SmplfyCore\SMPLFY_Log;
 
 class UserMeta {
-	public static $phoneMetaRow = 'phone';
+	public static $phoneMetaRow = 'user_phone';
 
 	/**
 	 * @param $userID
