@@ -11,6 +11,8 @@
  * @author Thomas Picolo-Donnelly
  * @since 0.0.1
  */
+namespace SMPLFY\boilerplate;
+
 prevent_external_script_execution();
 
 define( 'SITE_URL', get_site_url() );
