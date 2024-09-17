@@ -5,7 +5,6 @@ use SmplfyCore\SMPLFY_Log;
 
 class UserMeta {
 	public static $phoneMetaRow = 'phone';
-	public static $superUniqueMeta = 'super_unique_meta';
 
 	/**
 	 * @param $userID
