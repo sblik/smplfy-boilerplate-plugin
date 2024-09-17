@@ -10,7 +10,7 @@ namespace SMPLFY\boilerplate;
 
 use SmplfyCore\SMPLFY_BaseRepository;
 use SmplfyCore\SMPLFY_GravityFormsApiWrapper;
-
+use WP_Error;
 /**
  *
  * @method static ExampleEntity|null get_one( $fieldId, $value )
