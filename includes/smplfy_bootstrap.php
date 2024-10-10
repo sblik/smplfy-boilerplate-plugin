@@ -20,8 +20,7 @@ function require_boilerplate_dependencies() {
 
 	require_file( 'includes/enqueue_scripts.php' );
 	require_file( 'includes/admin/DependencyFactory.php' );
-
-	require_directory( 'includes/public/php/helpers' );
+	
 	require_directory( 'includes/public/php/types' );
 	require_directory( 'includes/public/php/entities' );
 	require_directory( 'includes/public/php/repositories' );
