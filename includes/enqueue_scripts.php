@@ -11,8 +11,8 @@ function enqueue_boilerplate_frontend_scripts() {
 	global $post;
 	$current_user = wp_get_current_user();
 
-	wp_register_script( 'smplfy-demo-frontend-script', SMPLFY_NAME_PLUGIN_URL . '/includes/js/frontend.js', array( 'jquery' ), null, true );
-	wp_register_style( 'smplfy-demo-frontend-styles', SMPLFY_NAME_PLUGIN_URL . '/includes/css/frontend.css' );
+	wp_register_script( 'smplfy-demo-frontend-script', SMPLFY_NAME_PLUGIN_URL . '/includes_/js/frontend.js', array( 'jquery' ), null, true );
+	wp_register_style( 'smplfy-demo-frontend-styles', SMPLFY_NAME_PLUGIN_URL . '/includes_/css/frontend.css' );
 
 	wp_enqueue_script( 'smplfy-demo-frontend-script' );
 	wp_enqueue_style( 'smplfy-demo-frontend-styles' );
