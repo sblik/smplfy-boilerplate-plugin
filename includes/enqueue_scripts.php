@@ -18,4 +18,4 @@ function enqueue_boilerplate_frontend_scripts() {
 	wp_enqueue_style( 'smplfy-demo-frontend-styles' );
 }
 
-add_action( 'wp_enqueue_scripts', 'enqueue_boilerplate_frontend_scripts' );
+add_action( 'wp_enqueue_scripts', 'SMPLFY\boilerplate\enqueue_boilerplate_frontend_scripts' );
