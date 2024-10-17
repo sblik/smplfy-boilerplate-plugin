@@ -18,7 +18,7 @@ function bootstrap_boilerplate_plugin() {
  */
 function require_boilerplate_dependencies() {
 
-	require_file( 'enqueue_scripts.php' );
+	require_file( 'includes/enqueue_scripts.php' );
 	require_file( 'admin/DependencyFactory.php' );
 
 	require_directory( 'public/php/types' );
