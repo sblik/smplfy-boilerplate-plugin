@@ -9,6 +9,7 @@
 namespace SMPLFY\boilerplate;
 
 use SmplfyCore\SMPLFY_Log;
+use SmplfyCore\WorkflowStep;
 
 class ExampleUsecase {
 	private ExampleRepository $exampleRepository;
@@ -18,9 +19,15 @@ class ExampleUsecase {
 	}
 
 	function example_function( $entry ) {
-		$exampleEntry = $this->exampleRepository->get_one_for_current_user();
+		$exampleEntry = new ExampleEntity( $entry );//If the form submitted is the same as the entity
+		$exampleEntry = $this->exampleRepository->get_one_for_current_user();//If the form submitted isn't the form for the entity
 
-		SMPLFY_Log::info( "ENTRY: ", $entry );
+		SMPLFY_Log::info( "ENTRY: ", $entry );//Log to Datadog
+
+		//Move to different workflow step
+		WorkflowStep::send( '10', $exampleEntry->formEntry );
+
+
 	}
 
 }

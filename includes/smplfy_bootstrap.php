@@ -18,14 +18,14 @@ function bootstrap_boilerplate_plugin() {
  */
 function require_boilerplate_dependencies() {
 
-	require_file( 'includes_/enqueue_scripts.php' );
-	require_file( 'includes_/admin/DependencyFactory.php' );
+	require_file( 'enqueue_scripts.php' );
+	require_file( 'admin/DependencyFactory.php' );
 
-	require_directory( 'includes_/public/php/types' );
-	require_directory( 'includes_/public/php/entities' );
-	require_directory( 'includes_/public/php/repositories' );
-	require_directory( 'includes_/public/php/usecases' );
-	require_directory( 'includes_/public/php/adapters' );
+	require_directory( 'public/php/types' );
+	require_directory( 'public/php/entities' );
+	require_directory( 'public/php/repositories' );
+	require_directory( 'public/php/usecases' );
+	require_directory( 'public/php/adapters' );
 
 }
 
