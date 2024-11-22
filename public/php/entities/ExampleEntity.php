@@ -12,6 +12,12 @@ namespace SMPLFY\boilerplate;
 
 use SmplfyCore\SMPLFY_BaseEntity;
 
+/**
+ *
+ * @property $nameFirst
+ * @property $nameLast
+ * @property $email
+ */
 class ExampleEntity extends SMPLFY_BaseEntity {
 	public function __construct( $formEntry = array() ) {
 		parent::__construct( $formEntry );
@@ -21,8 +27,8 @@ class ExampleEntity extends SMPLFY_BaseEntity {
 	protected function get_property_map(): array {
 		return array(
 			'nameFirst' => '1.3',
-			'nameLast' => '1.6',
-			'email' => '2',
+			'nameLast'  => '1.6',
+			'email'     => '2',
 		);
 	}
 }
