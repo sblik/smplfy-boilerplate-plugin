@@ -22,7 +22,6 @@ define( 'SMPLFY_NAME_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'SMPLFY_NAME_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
 //Load files and run function that initialise the whole plugin
-require_once SMPLFY_NAME_PLUGIN_DIR . 'admin/utilities/smplfy_require_utilities.php';
 require_once SMPLFY_NAME_PLUGIN_DIR . 'includes/smplfy_bootstrap.php';
 
 bootstrap_boilerplate_plugin();

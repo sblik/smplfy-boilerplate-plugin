@@ -26,6 +26,7 @@ function require_boilerplate_dependencies() {
 		$require->file( 'includes/enqueue_scripts.php' );
 		$require->file( 'admin/DependencyFactory.php' );
 
+		$require->directory( 'admin/settings' );
 		$require->directory( 'public/php/types' );
 		$require->directory( 'public/php/entities' );
 		$require->directory( 'public/php/repositories' );
