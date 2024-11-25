@@ -39,4 +39,4 @@ function enqueue_boilerplate_frontend_scripts() {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'enqueue_boilerplate_frontend_scripts' );
+add_action( 'wp_enqueue_scripts', 'SMPLFY\boilerplate\enqueue_boilerplate_frontend_scripts' );
